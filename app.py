@@ -2,7 +2,8 @@ import cherrypy
 from jinja2 import Environment,FileSystemLoader
 from db_tools import get_value,set_value,del_value
 from views import get_global_links,get_polls,get_poll,\
-    add_poll,edit_poll,cast_vote
+    cast_vote
+from models import add_poll,edit_poll
 import os.path
 
 conf = os.path.join(os.path.dirname(__file__), 'app.conf')
