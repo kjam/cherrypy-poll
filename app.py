@@ -85,18 +85,6 @@ class PollApp:
         return templ.render(data_dict)
     
 
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     cherrypy.quickstart(PollApp(), config=conf)
 else:
