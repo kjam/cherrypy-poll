@@ -1,5 +1,4 @@
 ipython
 cherrypy
-mock
 jinja2
 pylibmc
