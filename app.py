@@ -35,6 +35,8 @@ class PollViews:
             data_dict['success'] = True
         else:
             data_dict['poll'] = get_poll(key)
+        if not data_dict.get('poll'):
+            raise cherrypy.HTTPError(404)
         templ = env.get_template('poll.html')        
         return templ.render(data_dict)                
 
